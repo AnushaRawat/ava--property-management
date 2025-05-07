@@ -1,73 +1,173 @@
-# Welcome to your Lovable project
+# Welcome to AVA
 
-## Project info
+# Real Estate Management System
 
-**URL**: https://lovable.dev/projects/7a6fe074-d0d8-4da1-ad13-5345a0ed9ecc
+## Overview
 
-## How can I edit this code?
+The *Real Estate Management System* is a web application designed to optimize property management within residential societies. It allows tenants/owners to view notices, request services, rent properties, and provide feedback. Admins can manage notices, rental and service requests, and view tenant feedback. 
 
-There are several ways of editing your application.
+This project features separate interfaces for *Tenant/Owner* and *Admin* roles with a clear and intuitive design.
 
-**Use Lovable**
+### Key Features:
+- *Landing Page*: A professional homepage with society name and slogan.
+- *Login System*: Secure login for tenants/owners and admins with username and password.
+- *Tenant/Owner Dashboard*: View notices, request services, manage rentals, and provide feedback.
+- *Admin Dashboard*: Manage notices, handle service and rental requests, and view feedback.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7a6fe074-d0d8-4da1-ad13-5345a0ed9ecc) and start prompting.
+## Installation & Setup
 
-Changes made via Lovable will be committed automatically to this repo.
+Follow these steps to get the project up and running on your local machine.
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Make sure you have the following installed:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js (v14 or higher)
+- npm (or Yarn)
+- A code editor (e.g., Visual Studio Code)
 
-Follow these steps:
+### Steps to Set Up
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. *Clone the Repository*:
+   ```bash
+   Then, install frontend dependencies:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+bash
+Copy
+cd frontend
+npm install
+Start the Development Servers:
 
-# Step 3: Install the necessary dependencies.
-npm i
+Start the backend server:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+bash
+Copy
+cd backend
+npm start
+Start the frontend server:
 
-**Edit a file directly in GitHub**
+bash
+Copy
+cd frontend
+npm start
+Access the Application:
+Open your browser and visit http://localhost:3000 to see the app in action.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Features
+Tenant/Owner Features
+Login Page:
 
-**Use GitHub Codespaces**
+Login using a username and password.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Choose between Tenant/Owner and Admin roles.
 
-## What technologies are used for this project?
+Tenant/Owner Dashboard:
 
-This project is built with:
+View notices and events posted by the admin.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Request services (Plumbing, AC Repair, etc.).
 
-## How can I deploy this project?
+Enlist flats for rent or submit rental queries.
 
-Simply open [Lovable](https://lovable.dev/projects/7a6fe074-d0d8-4da1-ad13-5345a0ed9ecc) and click on Share -> Publish.
+Provide feedback or complaints.
 
-## Can I connect a custom domain to my Lovable project?
+Services Page:
 
-Yes, you can!
+Request specific services, such as plumbing or AC repair.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Select the type of service, flat number, and preferred date/time.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Rentals Page:
+
+Enlist Your Flat for Rent: Fill in flat details to list it for rent.
+
+Rental Queries: Submit queries for rental properties, including preferences for size, facing, and budget.
+
+Feedback Page:
+
+Submit feedback or complaints about the property or services.
+
+Admin Features
+Admin Dashboard:
+
+View and manage notices, rental requests, service requests, and feedback.
+
+Add Notice:
+
+Admin can add new notices, which will be displayed on the tenant/owner dashboards.
+
+Rental Requests:
+
+View and manage all rental queries made by tenants/owners.
+
+Mark requests as "Handled" after review.
+
+Service Requests:
+
+View and manage all service requests made by tenants/owners.
+
+Mark requests as "Handled" after completing the services.
+
+View Feedback:
+
+View all feedback and suggestions submitted by tenants/owners.
+
+File Structure
+Here's the project file structure:
+
+perl
+Copy
+real-estate-management-system/
+├── backend/                # Backend code
+│   ├── data/               # JSON files for mock data
+│   ├── controllers/        # Logic for handling requests
+│   ├── routes/             # API routes
+│   ├── server.js           # Main server file
+│   └── utils/              # Helper functions (e.g., reading/writing JSON data)
+├── frontend/               # Frontend code (React)
+│   ├── src/
+│   │   ├── components/     # React components
+│   │   ├── pages/          # Pages like Dashboard, Login, etc.
+│   │   ├── App.js          # Main React app file
+│   │   └── index.js        # Entry point of the app
+├── .gitignore              # Git ignore file
+├── package.json            # NPM package file
+└── README.md               # Project readme
+Technologies Used
+Frontend: React.js, JSX, CSS
+
+Backend: Node.js, Express.js
+
+Storage: JSON files (mock data storage for quick development)
+
+Version Control: Git
+
+Contributing
+Fork the repository.
+
+Create a new branch (git checkout -b feature-branch).
+
+Make your changes.
+
+Commit your changes (git commit -m 'Add new feature').
+
+Push to your branch (git push origin feature-branch).
+
+Create a pull request.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgments
+Special thanks to the contributors and open-source libraries used in the project.
+
+yaml
+Copy
+
+---
+
+This *README* provides a complete overview of your project, including installation instructions, features, file structure, and contributions. You can copy and paste this directly into your project’s *README.md* file.
+
+Let me know if you need any modifications or additional details!
+
+
